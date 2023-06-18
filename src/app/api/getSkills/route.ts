@@ -9,16 +9,13 @@ export async function GET(req: Request) {
     let allSkills: Array<SkillSet> = [];
     let skills: string;
 
-    const skillPromises = data.map(async (item) => {
-        const skills = await fs.promises.readFile(path.join(process.cwd(), '/data/skillData/skills/', item), "utf-8");
-        return JSON.parse(skills);
-    });
-
-
-    allSkills = await Promise.all(skillPromises);
+    for (let index = 0; index < data.length; index++) {
+        const item = data[index];
+        skills = await fs.promises.readFile(path.join(process.cwd(), '/data/skillData/skills/') + item, "utf-8");
+        allSkills.push(JSON.parse(skills));
+    }
 
     allSkills.sort((a, b) => a.index - b.index);
-
 
     // new syntax nextjs 13s
     return new Response(JSON.stringify(allSkills));
