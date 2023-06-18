@@ -1,0 +1,17 @@
+{
+    "title": "Programming Languages",
+    "skills": [
+        {
+            "name": "C",
+            "icon": "COriginal"
+        },
+        {
+            "name": "javascript",
+            "icon": "JavascriptOriginal"
+        },
+        {
+            "name": "Java",
+            "icon": "JavaOriginal"
+        }
+    ]
+}

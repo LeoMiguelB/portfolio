@@ -1,0 +1,9 @@
+{
+    "title": "Databases",
+    "skills": [
+        {
+            "name": "PostgreSQL",
+            "icon": "PostgresqlPlain"
+        }
+    ]
+}

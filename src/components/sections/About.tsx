@@ -91,8 +91,7 @@ export default function About() {
                             delay: 0.6,
                         }}
                     >
-                        From Reading other About Me’s on other portfolio’s, I can say my journey
-                        with programming is quite bizarre. I started at the tender age of 11 when
+                        I started at the tender age of 11 when
                         I played around with scratch and made my first game, which was a flappy bird clone.
                         Then the years
                         following I started producing music as a hobby, and through this experience

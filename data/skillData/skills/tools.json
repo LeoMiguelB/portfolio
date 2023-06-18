@@ -1,0 +1,13 @@
+{
+    "title": "Tools",
+    "skills": [
+        {
+            "name": "Github",
+            "icon": "GithubOriginal"
+        },
+        {
+            "name": "Gitlab",
+            "icon": "GitlabOriginal"
+        }
+    ]
+}

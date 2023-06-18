@@ -1,0 +1,22 @@
+{
+    "title": "Front End",
+    "skills": [
+        {
+            "name": "Next.js",
+            "icon": "NextjsLine"
+        },
+        {
+            "name": "React.js",
+            "icon": "ReactOriginal"
+        },
+        {
+            "name": "Redux.js",
+            "icon": "ReduxOriginal"
+        },
+        {
+            "name": "Tailwind CSS",
+            "icon": "TailwindcssPlain"
+        }
+    ],
+    "index": 1
+}
