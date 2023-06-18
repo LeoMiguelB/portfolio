@@ -6,6 +6,8 @@ import { Metadata } from "next";
 
 import Navigation from "@/components/Navigation";
 
+import About from "@/components/sections/About";
+
 export const metadata: Metadata = {
   generator: 'Next.js',
   title: "Personal Portfolio",
@@ -31,8 +33,9 @@ export default function Home() {
     <main className={inter.className}>
       <Navigation />
       <Hero />
-      {/* <div className={`${styles.container} ${inter.className}`}>
-      </div> */}
+      <div className={`${styles.container} ${inter.className}`}>
+        <About />
+      </div>
     </main>
   )
 }

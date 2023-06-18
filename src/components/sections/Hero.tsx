@@ -180,7 +180,7 @@ export default function Hero() {
                     }}
                     className="w-[100%] flex-row justify-center items-center mt-[3rem] mobile:hidden tablet:hidden laptop:flex desktop:flex"
                 >
-                    <a href="#aboutme"><ChevronsDown className="scale-[180%] duration-500 hover:scale-[150%]" /></a>
+                    <a href="#about-me"><ChevronsDown className="scale-[180%] duration-500 hover:scale-[150%]" /></a>
                 </motion.div>
             </div>
         </section>
