@@ -1,3 +1,5 @@
+"use client"
+
 import SkillCard from "../SkillCard";
 
 import { motion } from "framer-motion";
@@ -7,7 +9,6 @@ type SkillsProps = {
 }
 
 export default function Skills({ skills }: SkillsProps) {
-    console.log(skills);
     return (
         <section id="skills">
             <div className="flex flex-row justify-between items-center mt-[7rem] mobile:text-[1.5rem] tablet:text-[1.5rem] laptop:text-[3rem] desktop:text-[3rem] font-bold w-[100%]">

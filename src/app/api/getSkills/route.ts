@@ -15,6 +15,7 @@ export async function GET(req: Request) {
         allSkills.push(JSON.parse(skills));
     }
 
+
     allSkills.sort((a, b) => a.index - b.index);
 
     // new syntax nextjs 13s

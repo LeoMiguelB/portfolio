@@ -1,0 +1,23 @@
+{
+    "title": "MUSIC_GALLERY_FS",
+    "slug": "music-gallery",
+    "overview": "",
+    "type": "Web Application",
+    "timeline": {
+        "startDate": "April 2022",
+        "endDate": "June 2022"
+    },
+    "associated": {
+        "name": "Personal Project"
+    },
+    "stack": [
+        "PostgreSQL",
+        "Express.js",
+        "React.js",
+        "Node.js"
+    ],
+    "links": {
+        "github": "",
+        "hosted": false
+    }
+}
