@@ -16,7 +16,6 @@ const cache = new NodeCache({
     checkperiod: 300,
 })
 
-// check if server has fresh cached data, if yes return the fresh/valid data 
 async function getDataFromCacheOrApi(key: string, apiCall: any) {
     const cachedData = cache.get(key);
 
@@ -31,15 +30,7 @@ async function getDataFromCacheOrApi(key: string, apiCall: any) {
 
 export async function GET(req: Request) {
 
-    // check if the request method if GET, if otherwise return error message
-    if (req.method !== "GET") {
-        // res.status(405).json({ message: "Method Not Allowed" });
-        return new Response("", { status: 405, statusText: "Method not allowed" });
-    }
-
-    // try to get the data
     try {
-        // try to get the cached data
         const allProjects = await getDataFromCacheOrApi("projectData", async () => {
 
             // get the data from the personal GitHub account using authorized API token
@@ -85,13 +76,9 @@ export async function GET(req: Request) {
             return result;
         });
 
-        // res.status(200).json(allProjects);
         return new Response(JSON.stringify(allProjects), { status: 200 })
     } catch (error) {
-        // return res.status(500).send({
-        //     success: false,
-        //     message: "Internal Server Error.",
-        // });
+
         console.log(error);
         return new Response("", { status: 500, statusText: "Internal Server Error" });
     }

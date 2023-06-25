@@ -2,12 +2,12 @@
     {
         "repo_name": "MUSIC_GALLERY_FS",
         "title": "Audio Gallery",
-        "slug": "music-gallery",
+        "slug": "MUSIC_GALLERY_FS",
         "overview": "",
         "type": "Web Application",
         "timeline": {
-            "startDate": "April 2022",
-            "endDate": "June 2022"
+            "startDate": "April 2023",
+            "endDate": "June 2023"
         },
         "associated": {
             "name": "Personal Project"
@@ -17,6 +17,53 @@
             "Express.js",
             "React.js",
             "Node.js"
+        ],
+        "links": {
+            "github": "",
+            "hosted": false
+        }
+    },
+    {
+        "repo_name": "my-todo",
+        "title": "Todo App",
+        "slug": "my-todo",
+        "overview": "",
+        "type": "Web Application",
+        "timeline": {
+            "startDate": "December 2022",
+            "endDate": "February 2023"
+        },
+        "associated": {
+            "name": "Personal Project"
+        },
+        "stack": [
+            "PostgreSQL",
+            "Express.js",
+            "React.js",
+            "Node.js"
+        ],
+        "links": {
+            "github": "",
+            "hosted": false
+        }
+    },
+    {
+        "repo_name": "react-proto",
+        "title": "Music to Video",
+        "slug": "react-proto",
+        "overview": "",
+        "type": "Web Application",
+        "timeline": {
+            "startDate": "December 15 2022",
+            "endDate": "December 23 2022"
+        },
+        "associated": {
+            "name": "Personal Project"
+        },
+        "stack": [
+            "React.js",
+            "Express.js",
+            "FFmpeg"
         ],
         "links": {
             "github": "",
