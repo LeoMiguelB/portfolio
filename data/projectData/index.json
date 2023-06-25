@@ -1,5 +1,29 @@
 [
     {
+        "repo_name": "portfolio",
+        "title": "Personal Portfolio",
+        "slug": "portfolio",
+        "overview": "",
+        "type": "Web Application",
+        "timeline": {
+            "startDate": "June 1 2023",
+            "endDate": "June 26 2023"
+        },
+        "associated": {
+            "name": "Personal Project"
+        },
+        "stack": [
+            "Next.js",
+            "React.js",
+            "Node.js",
+            "Tailwind"
+        ],
+        "links": {
+            "github": "",
+            "hosted": false
+        }
+    },
+    {
         "repo_name": "MUSIC_GALLERY_FS",
         "title": "Audio Gallery",
         "slug": "MUSIC_GALLERY_FS",

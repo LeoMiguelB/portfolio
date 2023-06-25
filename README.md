@@ -14,6 +14,9 @@ This is my personal portfolio website where people can get to know me better.
 * framer-motion
 * devicons-react
 
+### This was inspired by Armaan's portfolio
+* [Check out him out!](https://github.com/armaanjaj)
+
 
 
 
