@@ -29,9 +29,9 @@ export default function Projects({ projects }: ProjectsProps) {
                             duration: 0.5,
                             delay: 0.1,
                         }}
-                        className="inline mobile:text-[1rem] tablet:text-[2rem] laptop:text-[2.5rem] desktop:text-[2.5rem]"
+                        className="inline"
                     >
-                        Projects I&apos;ve worked on
+                        Projects
                     </motion.div>
                     <motion.div
                         initial={{
@@ -50,7 +50,7 @@ export default function Projects({ projects }: ProjectsProps) {
                             duration: 0.5,
                             delay: 0.4,
                         }}
-                        className="h-[2px] mobile:w-[25%] tablet:w-[30%] laptop:w-[50%] desktop:w-[50%] inline-block bg-[#350078]"
+                        className="h-[2px] mobile:w-[60%] tablet:w-[60%] laptop:w-[80%] desktop:w-[80%] inline-block bg-ab"
                     ></motion.div>
                 </div>
                 <div className="flex flex-row justify-center items-center flex-wrap gap-4 mobile:mt-[2rem] tablet:mt-[2rem] laptop:mt-[5rem] desktop:mt-[5rem]">

@@ -125,7 +125,7 @@ export default function SlugPage({ params }: { params: { slug: string } }) {
                                     duration: 0.5,
                                     delay: 0.5,
                                 }}
-                                className="h-[2px] mobile:w-[70%] tablet:w-[70%] laptop:w-[80%] desktop:w-[80%] inline-block bg-[#350078]"
+                                className="h-[2px] mobile:w-[70%] tablet:w-[70%] laptop:w-[80%] desktop:w-[80%] inline-block bg-ag"
                             ></motion.div>
                         </div>
                         <motion.div
@@ -165,7 +165,7 @@ export default function SlugPage({ params }: { params: { slug: string } }) {
                                 duration: 0.5,
                                 delay: 0.6,
                             }}
-                            className="h-[2px] w-full inline-block bg-[#350078]"
+                            className="h-[2px] w-full inline-block bg-ag"
                         ></motion.div>
                         <div className="flex flex-row items-start gap-5 flex-wrap mobile:justify-start tablet:justify-start laptop:justify-center desktop:justify-center">
                             <motion.div
@@ -185,7 +185,7 @@ export default function SlugPage({ params }: { params: { slug: string } }) {
                                     duration: 0.5,
                                     delay: 0.3,
                                 }}
-                                className="flex flex-col justify-center items-start gap-5 rounded-[5px] border-solid border-[2px] border-[#350078] p-4"
+                                className="flex flex-col justify-center items-start gap-5 rounded-[5px] border-solid border-[2px] border-ag p-4"
                             >
                                 <div className="text-[1rem] font-semibold">
                                     Technologies
@@ -217,7 +217,7 @@ export default function SlugPage({ params }: { params: { slug: string } }) {
                                     duration: 0.5,
                                     delay: 0.3,
                                 }}
-                                className="flex flex-col justify-center items-center gap-5 rounded-[5px] border-solid border-[2px] border-[#350078] p-4"
+                                className="flex flex-col justify-center items-center gap-5 rounded-[5px] border-solid border-[2px] border-ag p-4"
                             >
                                 <div className="text-[1rem] font-semibold">
                                     Type
@@ -241,7 +241,7 @@ export default function SlugPage({ params }: { params: { slug: string } }) {
                                     duration: 0.5,
                                     delay: 0.3,
                                 }}
-                                className="flex flex-col justify-center items-center gap-5 rounded-[5px] border-solid border-[2px] border-[#350078] p-4"
+                                className="flex flex-col justify-center items-center gap-5 rounded-[5px] border-solid border-[2px] border-ag p-4"
                             >
                                 <div className="text-[1rem] font-semibold">
                                     Timeline
@@ -281,7 +281,7 @@ export default function SlugPage({ params }: { params: { slug: string } }) {
                                     duration: 0.5,
                                     delay: 0.3,
                                 }}
-                                className="flex flex-col justify-center items-center gap-5 rounded-[5px] border-solid border-[2px] border-[#350078] p-4"
+                                className="flex flex-col justify-center items-center gap-5 rounded-[5px] border-solid border-[2px] border-ag p-4"
                             >
                                 <div className="text-[1rem] font-semibold">
                                     Associated
@@ -307,7 +307,7 @@ export default function SlugPage({ params }: { params: { slug: string } }) {
                                     duration: 0.5,
                                     delay: 0.3,
                                 }}
-                                className="flex flex-col justify-center items-center gap-5 rounded-[5px] border-solid border-[2px] border-[#350078] p-4"
+                                className="flex flex-col justify-center items-center gap-5 rounded-[5px] border-solid border-[2px] border-ag p-4"
                             >
                                 <div className="text-[1rem] font-semibold">
                                     Links
@@ -375,7 +375,7 @@ export default function SlugPage({ params }: { params: { slug: string } }) {
                                             duration: 0.5,
                                             delay: 0.6,
                                         }}
-                                        className="h-[2px] mobile:w-[70%] tablet:w-[70%] laptop:w-[80%] desktop:w-[80%] inline-block bg-[#350078]"
+                                        className="h-[2px] mobile:w-[70%] tablet:w-[70%] laptop:w-[80%] desktop:w-[80%] inline-block bg-ag"
                                     ></motion.div>
                                 </div>
                                 <div className="flex flex-row justify-start items-center flex-wrap gap-5">
@@ -405,7 +405,7 @@ export default function SlugPage({ params }: { params: { slug: string } }) {
                                                 width={400}
                                                 height={600}
                                                 priority
-                                                className="w-[100%] border-[2px] mt-5 border-solid border-[#350078] rounded-[5px] p-3"
+                                                className="w-[100%] border-[2px] mt-5 border-solid border-ag rounded-[5px] p-3"
                                             />
                                         </motion.div>
                                     ))}

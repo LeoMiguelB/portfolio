@@ -64,7 +64,7 @@ export default function SkillCardBlock({ icon, name }: SkillCardBlockProps) {
     }
 
     return (
-        <div className="flex flex-row justify-evenly items-center gap-4 p-4 rounded-[5px] bg-[#350078]">
+        <div className="flex flex-row  justify-evenly items-center gap-4 p-4 rounded-[5px] bg-ab">
             {IconComponent && (
                 <div>
                     <IconComponent className="scale-[150%]" />

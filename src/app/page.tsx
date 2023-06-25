@@ -62,8 +62,8 @@ export default function Home() {
       <Hero />
       <div className={`${styles.container} ${inter.className}`}>
         <About />
-        <Projects projects={projects} />
         <Skills skills={skills} />
+        <Projects projects={projects} />
         <Contact />
       </div>
     </main>

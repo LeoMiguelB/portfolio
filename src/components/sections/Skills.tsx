@@ -29,7 +29,7 @@ export default function Skills({ skills }: SkillsProps) {
                         duration: 0.5,
                         delay: 0.1,
                     }}
-                    className="inline mobile:text-[1rem] tablet:text-[2rem] laptop:text-[2.5rem] desktop:text-[2.5rem]"
+                    className="inline"
                 >
                     Technical Skills
                 </motion.div>
@@ -50,10 +50,10 @@ export default function Skills({ skills }: SkillsProps) {
                         duration: 0.5,
                         delay: 0.4,
                     }}
-                    className="h-[2px] mobile:w-[60%] tablet:w-[80%] laptop:w-[70%] desktop:w-[70%] inline-block bg-[#350078]"
+                    className="h-[2px] mobile:w-[40%] tablet:w-[80%] laptop:w-[70%] desktop:w-[70%] inline-block bg-ab"
                 ></motion.div>
             </div>
-            <div className="flex flex-col justify-center items-start mobile:mt-[2rem] tablet:mt-[2rem] laptop:mt-[5rem] desktop:mt-[5rem] gap-6">
+            <div className="flex mobile:flex-col tablet:flex-col laptop:flex-row desktop:flex-row justify-center items-start mobile:mt-[2rem] tablet:mt-[2rem] laptop:mt-[5rem] desktop:mt-[5rem] gap-6">
                 {skills?.map((skill, i) => (
                     <motion.div
                         initial={{

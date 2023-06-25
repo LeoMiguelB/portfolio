@@ -26,7 +26,7 @@ export default function Contact() {
                         duration: 0.5,
                         delay: 0.4,
                     }}
-                    className="h-[2px] w-[30%] inline-block bg-[#350078]"
+                    className="h-[2px] mobile:w-[15%] tablet:w-[15%] laptop:w-[30%] desktop:w-[30%] inline-block bg-ab"
                 ></motion.div>
                 <motion.div
                     initial={{
@@ -45,7 +45,7 @@ export default function Contact() {
                         duration: 0.5,
                         delay: 0.1,
                     }}
-                    className="inline mobile:text-[1rem] tablet:text-[2rem] laptop:text-[2.5rem] desktop:text-[2.5rem]"
+                    className="inline"
                 >
                     Contact Me
                 </motion.div>
@@ -66,11 +66,11 @@ export default function Contact() {
                         duration: 0.5,
                         delay: 0.4,
                     }}
-                    className="h-[2px] w-[30%] inline-block bg-[#350078]"
+                    className="h-[2px] mobile:w-[24%] tablet:w-[24%] laptop:w-[40%] desktop:w-[40%] inline-block bg-ab"
                 ></motion.div>
             </div>
             <div className="flex flex-col justify-center items-center mobile:mt-[2rem] tablet:mt-[2rem] laptop:mt-[5rem] desktop:mt-[5rem] gap-10">
-                <div className="flex justify-evenly items-start rounded-[5px] flex-wrap relative gap-4 mobile:flex-col tablet:flex-col laptop:flex-row desktop:flex-row bg-[#110036] w-full p-5 mobile:text-[1.5rem] tablet:text-[1.5rem] laptop:text-[1rem] desktop:text-[1rem]">
+                <div className="flex justify-evenly items-start rounded-[5px] flex-wrap relative gap-4 mobile:flex-col tablet:flex-col laptop:flex-row desktop:flex-row bg-ag w-full p-5 mobile:text-[1.5rem] tablet:text-[1.5rem] laptop:text-[1rem] desktop:text-[1rem]">
                     <div className="flex flex-col justify-start gap-5 mobile:items-start tablet:items-start laptop:items-center desktop:items-center">
                         <motion.div
                             initial={{
@@ -198,7 +198,7 @@ export default function Contact() {
                                         <div>
                                             <Github />
                                         </div>
-                                        <div>@LeoMiguelB</div>
+                                        <div >@LeoMiguelB</div>
                                     </div>
                                 </Link>
                             </motion.div>

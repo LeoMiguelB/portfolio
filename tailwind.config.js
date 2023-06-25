@@ -19,50 +19,56 @@ module.exports = {
       keyframes: {
         glow: {
           "0%": {
-            backgroundColor: "#9d4dff",
-            boxShadow: "0 0 15px 0 #9d4dff",
+            backgroundColor: "#FFD369",
+            boxShadow: "0 0 15px 0 #FFD369",
           },
           "10%": {
-            backgroundColor: "#811aff",
-            boxShadow: "0 0 13px 0 #9d4dff",
+            backgroundColor: "#ecc361",
+            boxShadow: "0 0 13px 0 #FFD369",
           },
           "20%": {
-            backgroundColor: "#6700e6",
-            boxShadow: "0 0 11px 0 #9d4dff",
+            backgroundColor: "#d9b359",
+            boxShadow: "0 0 11px 0 #FFD369",
           },
           "30%": {
-            backgroundColor: "#5000b3",
-            boxShadow: "0 0 9px 0 #9d4dff",
+            backgroundColor: "#dfb03f",
+            boxShadow: "0 0 9px 0 #FFD369",
           },
           "40%": {
-            backgroundColor: "#390080",
-            boxShadow: "0 0 7px 0 #9d4dff",
+            backgroundColor: "#ffd267",
+            boxShadow: "0 0 7px 0 #FFD369",
           },
           "50%": {
-            backgroundColor: "#390080",
-            boxShadow: "0 0 5px 0 #9d4dff",
+            backgroundColor: "#ffe669",
+            boxShadow: "0 0 5px 0 #FFD369",
           },
           "60%": {
-            backgroundColor: "#350078",
-            boxShadow: "0 0 7px 0 #9d4dff",
+            backgroundColor: "#f0d963",
+            boxShadow: "0 0 7px 0 #FFD369",
           },
           "70%": {
-            backgroundColor: "#450099",
-            boxShadow: "0 0 9px 0 #9d4dff",
+            backgroundColor: "#fffa69",
+            boxShadow: "0 0 9px 0 #FFD369",
           },
           "80%": {
-            backgroundColor: "#5c00cc",
-            boxShadow: "0 0 11px 0 #9d4dff",
+            backgroundColor: "#ffdc67",
+            boxShadow: "0 0 11px 0 #FFD369",
           },
           "90%": {
-            backgroundColor: "#7300ff",
-            boxShadow: "0 0 13px 0 #9d4dff",
+            backgroundColor: "#e7d19c",
+            boxShadow: "0 0 13px 0 #FFD369",
           },
           "100%": {
-            backgroundColor: "#8f33ff",
-            boxShadow: "0 0 15px 0px #9d4dff",
+            backgroundColor: "#ffd267",
+            boxShadow: "0 0 15px 0px #FFD369",
           },
         },
+      },
+      colors: {
+        "ab": "#222831",
+        "ag": "#393E46",
+        "yb": "#FFD369",
+        "aw": "EEEEEE",
       },
     },
   },

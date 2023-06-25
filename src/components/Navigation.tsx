@@ -62,8 +62,8 @@ export default function Hamburger() {
             >
                 <div>
                     <div className={styles.container}>
-                        <div className="text-[#8f33ff] mt-[60px] hover:cursor-pointer w-fit" onClick={toggleMenu}>
-                            <X className="scale-[150%]" />
+                        <div className="text-ag mt-[60px] hover:cursor-pointer w-fit" onClick={toggleMenu}>
+                            <X className="scale-[150%]" color="#EEEE" />
                         </div>
                     </div>
                     <div className={styles.container}>
@@ -133,7 +133,7 @@ export default function Hamburger() {
                     type: "spring",
                 }}
             >
-                <Menu onClick={toggleMenu} className="mobile:scale-[200%] tablet:scale-[200%] laptop:scale-[150%] desktop:scale-[150%] mobile:absolute tablet:absolute laptop:static desktop:static mt-[60px] mobile:mx-[20px] tablet:mx-[40px] laptop:mx-[50px] desktop:mx-[50px] hover:cursor-pointer" />
+                <Menu onClick={toggleMenu} color="#EEEE" className="mobile:scale-[200%] tablet:scale-[200%] laptop:scale-[150%] desktop:scale-[150%] mobile:absolute tablet:absolute laptop:static desktop:static mb-2 mt-[40px] mobile:mx-[20px] tablet:mx-[40px] laptop:mx-[50px] desktop:mx-[50px] hover:cursor-pointer" />
             </motion.div>
         </>
     )

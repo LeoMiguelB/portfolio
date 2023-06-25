@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 
+import Image from "next/image";
+
 export default function About() {
     return (
         <section id="about-me">
@@ -23,7 +25,7 @@ export default function About() {
                         duration: 0.5,
                         delay: 0.8,
                     }}
-                    className="inline mobile:text-[1rem] tablet:text-[2rem] laptop:text-[2.5rem] desktop:text-[2.5rem]"
+                    className="inline"
                 >
                     About Me
                 </motion.div>
@@ -44,11 +46,11 @@ export default function About() {
                         duration: 0.5,
                         delay: 0.9,
                     }}
-                    className="h-[2px] mobile:w-[60%] tablet:w-[80%] laptop:w-[80%] desktop:w-[80%] inline-block bg-[#350078]"
+                    className="h-[2px] mobile:w-[60%] tablet:w-[80%] laptop:w-[80%] desktop:w-[80%] inline-block bg-ab"
                 ></motion.div>
             </div>
-            <div className="flex justify-between items-start mobile:mt-[2rem] tablet:mt-[2rem] laptop:mt-[5rem] desktop:mt-[5rem] mobile:flex-col tablet:flex-col laptop:flex-row desktop:flex-row">
-                <div className="mobile:w-[100%] tablet:w-[100%] laptop:w-[50%] desktop:w-[50%] text-[1rem]">
+            <div className="flex justify-between items-start mobile:mt-[2rem] tablet:mt-[2rem] laptop:mt-[5rem] desktop:mt-[5rem] mobile:flex-col tablet:flex-col laptop:flex-row desktop:flex-row" >
+                <div className="mobile:w-[100%] tablet:w-[100%] laptop:w-[50%] desktop:w-[50%] text-[1rem] bg-ab rounded-lg p-7">
                     <motion.p
                         initial={{
                             opacity: 0,
@@ -67,9 +69,7 @@ export default function About() {
                             delay: 0.6,
                         }}
                     >
-                        Hi, if you haven’t already known by now, my name is Leo.
-                        I am currently a student at the University of Guelph enrolled in the
-                        computer science Co-op program.
+                        Thank you for visiting my website. Allow me to introduce myself. My name is Leo, and I am currently pursuing a degree in computer science at the University of Guelph. Throughout my studies, I have acquired valuable skills in programming languages such as <span className="text-yb">C{" "}</span>, <span className="text-yb">HTML{" "}</span>, and <span className="text-yb">CSS</span>.
                         {" "}
                     </motion.p>
                     <br />
@@ -91,14 +91,7 @@ export default function About() {
                             delay: 0.6,
                         }}
                     >
-                        I started at the tender age of 11 when
-                        I played around with scratch and made my first game, which was a flappy bird clone.
-                        Then the years
-                        following I started producing music as a hobby, and through this experience
-                        I walked a through intersections where programming where programming allowed
-                        me to make my life easier such as the time where I built a simple program with
-                        FFmpeg to merge a picture and an audio into one video so I could upload an
-                        instrumental to youtube.
+                        In addition to my academic pursuits, I find great enjoyment in playing basketball and exploring music. These hobbies provide a much-needed balance to my life, and I devote a significant amount of my free time to them.
                     </motion.p>
                     <br />
                     <motion.p
@@ -119,14 +112,8 @@ export default function About() {
                             delay: 0.7,
                         }}
                     >
-                        Towards the end of my highschool to now, I have worked with frameworks
-                        such as <span className="text-[#704dfc]">Node.js</span>, {" "}
-                        <span className="text-[#704dfc]">React.js</span>, {" "}
-                        <span className="text-[#704dfc]">Redux.js</span>, {" "}
-                        and <span className="text-[#704dfc]">Next.js</span>. Throughout these years
-                        I have gained the knowledge to be fluent in <span className="text-[#704dfc]">C</span>,{" "}
-                        <span className="text-[#704dfc]">Java</span>,
-                        and <span className="text-[#704dfc]">Javascript</span>.
+
+                        Moreover, I have a deep passion for building web applications. I have acquired proficiency in various technologies such as <span className="text-yb">React.js{" "}</span>, <span className="text-yb">Next.js{" "}</span>, <span className="text-yb">Redux.js{" "}</span>, and <span className="text-yb">TailwindCSS</span>. However, it can be quite a rollercoaster when dealing with these ever-evolving frameworks. Just when you think you've mastered them, Next.js swoops in with its fancy new app directory, leaving you scratching your head.
                     </motion.p>
                     <br />
                 </div>
@@ -149,6 +136,35 @@ export default function About() {
                     }}
                 >
 
+                </motion.div>
+
+                <motion.div
+                    initial={{
+                        opacity: 0,
+                        y: 10,
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                        y: 0,
+                    }}
+                    viewport={{
+                        once: true,
+                        amount: 1,
+                    }}
+                    transition={{
+                        duration: 0.5,
+                        delay: 0.8,
+                    }}
+                    className="mr-40 mt-4"
+                >
+                    <Image
+                        src="/about-me-pic.png"
+                        alt="Image of a short asian man standing beside bart simpson"
+                        height={400}
+                        width={300}
+                        priority
+                        className="w-[100%] border-[2px] border-solid border-ab rounded-[5px]"
+                    />
                 </motion.div>
             </div>
         </section>
