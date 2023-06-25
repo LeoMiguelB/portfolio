@@ -73,8 +73,8 @@ export default function Hamburger() {
                                 variants={menuItemVariants}
                             >
                                 <a
-                                    className="text-[3rem] font-bold no-underline hover:scale-[200%]"
-                                    href="#aboutme"
+                                    className="text-[3rem] font-bold no-underline hover:scale-[200%] duration-300 ease-in-out hover:text-[#ffffff83]"
+                                    href="#about-me"
                                 >
                                     About me
                                 </a>
@@ -84,8 +84,8 @@ export default function Hamburger() {
                                 variants={menuItemVariants}
                             >
                                 <Link
-                                    className="text-[3rem] font-bold no-underline hover:scale-[200%]"
-                                    href="/projects"
+                                    className="text-[3rem] font-bold no-underline hover:scale-[200%] duration-300 ease-in-out hover:text-[#ffffff83]"
+                                    href="#projects"
                                 >
                                     Projects
                                 </Link>
@@ -95,7 +95,7 @@ export default function Hamburger() {
                                 variants={menuItemVariants}
                             >
                                 <a
-                                    className="text-[3rem] font-bold no-underline hover:scale-[200%]"
+                                    className="text-[3rem] font-bold no-underline hover:scale-[200%] duration-300 ease-in-out hover:text-[#ffffff83]"
                                     href="#skills"
                                 >
                                     Skills
@@ -106,7 +106,7 @@ export default function Hamburger() {
                                 variants={menuItemVariants}
                             >
                                 <a
-                                    className="text-[3rem] font-bold no-underline hover:scale-[200%]"
+                                    className="text-[3rem] font-bold no-underline hover:scale-[200%] duration-300 ease-in-out hover:text-[#ffffff83]"
                                     href="#getintouch"
                                 >
                                     Get in Touch

@@ -10,6 +10,7 @@ import About from "@/components/sections/About";
 import useAxios from "../../hooks/useAxios";
 import Skills from "@/components/sections/Skills";
 import Projects from "@/components/sections/Projects";
+import Contact from "@/components/sections/Contact";
 
 export const metadata: Metadata = {
   generator: 'Next.js',
@@ -63,6 +64,7 @@ export default function Home() {
         <About />
         <Projects projects={projects} />
         <Skills skills={skills} />
+        <Contact />
       </div>
     </main>
   )

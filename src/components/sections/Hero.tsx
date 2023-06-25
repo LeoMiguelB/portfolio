@@ -1,4 +1,3 @@
-"use client"
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Linkedin, Github, ChevronsDown } from "lucide-react";
@@ -23,7 +22,7 @@ export default function Hero() {
                                 delay: 0.1,
                                 type: "spring",
                             }}
-                            className="flex flex-row justify-center items-center text-[3rem] font-extrabold"
+                            className="flex flex-row justify-center items-center mobile:text-[3rem] desktop:text-[5rem] laptop:text-[5rem] font-extrabold"
                         >
                             Welcome!
                         </motion.div>

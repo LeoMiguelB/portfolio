@@ -29,7 +29,7 @@ export default function Projects({ projects }: ProjectsProps) {
                             duration: 0.5,
                             delay: 0.1,
                         }}
-                        className="inline"
+                        className="inline mobile:text-[1rem] tablet:text-[2rem] laptop:text-[2.5rem] desktop:text-[2.5rem]"
                     >
                         Projects I&apos;ve worked on
                     </motion.div>

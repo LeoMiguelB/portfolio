@@ -1,6 +1,5 @@
 "use client"
 
-import { useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import styles from "../../index.module.css";
@@ -80,7 +79,7 @@ export default function SlugPage({ params }: { params: { slug: string } }) {
                                 )}
                             </div>
                             <div className="flex flex-row justify-between items-center gap-5">
-                                <div className="mobile:hidden tablet:hidden laptop:block desktop:block">
+                                <div className="mobile:block tablet:block laptop:block desktop:block">
                                     <Link href={"/"}>
                                         <Home className="text-[2rem]" />
                                     </Link>

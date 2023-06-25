@@ -21,7 +21,21 @@
         "links": {
             "github": "",
             "hosted": false
-        }
+        },
+        "images": [
+            {
+                "path": "/projects/home-page-music-lib.png",
+                "alt": "home page of a music web app"
+            },
+            {
+                "path": "/projects/login-page-music-lib.png",
+                "alt": "login page of a music web app"
+            },
+            {
+                "path": "/projects/upload-data-music-lib.png",
+                "alt": "file upload page of a music web app"
+            }
+        ]
     },
     {
         "repo_name": "my-todo",
@@ -45,7 +59,17 @@
         "links": {
             "github": "",
             "hosted": false
-        }
+        },
+        "images": [
+            {
+                "path": "/projects/login-page-todo.png",
+                "alt": "login page of a todo web app"
+            },
+            {
+                "path": "/projects/home-page-todo.png",
+                "alt": "home page of a todo web app"
+            }
+        ]
     },
     {
         "repo_name": "react-proto",

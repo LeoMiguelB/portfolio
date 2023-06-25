@@ -23,7 +23,7 @@ export default function About() {
                         duration: 0.5,
                         delay: 0.8,
                     }}
-                    className="inline"
+                    className="inline mobile:text-[1rem] tablet:text-[2rem] laptop:text-[2.5rem] desktop:text-[2.5rem]"
                 >
                     About Me
                 </motion.div>
