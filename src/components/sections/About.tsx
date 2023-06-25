@@ -113,7 +113,7 @@ export default function About() {
                         }}
                     >
 
-                        Moreover, I have a deep passion for building web applications. I have acquired proficiency in various technologies such as <span className="text-yb">React.js{" "}</span>, <span className="text-yb">Next.js{" "}</span>, <span className="text-yb">Redux.js{" "}</span>, and <span className="text-yb">TailwindCSS</span>. However, it can be quite a rollercoaster when dealing with these ever-evolving frameworks. Just when you think you've mastered them, Next.js swoops in with its fancy new app directory, leaving you scratching your head.
+                        Moreover, I have a deep passion for building web applications. I have acquired proficiency in various technologies such as <span className="text-yb">React.js{" "}</span>, <span className="text-yb">Next.js{" "}</span>, <span className="text-yb">Redux.js{" "}</span>, and <span className="text-yb">TailwindCSS</span>. However, it can be quite a rollercoaster when dealing with these ever-evolving frameworks. Just when you think you&#39;ve mastered them, Next.js swoops in with its fancy new app directory, leaving you scratching your head.
                     </motion.p>
                     <br />
                 </div>
@@ -155,15 +155,15 @@ export default function About() {
                         duration: 0.5,
                         delay: 0.8,
                     }}
-                    className="mr-40 mt-4"
+                    className="mr-40 mt-4 border-white mobile:w-[340px] mobile:h-[340px] tablet:w-[350px] tablet:h-[350px] laptop:w-[400px] laptop:h-[400px] desktop:w-[400px] desktop:h-[400px] relative"
                 >
                     <Image
                         src="/about-me-pic.png"
+                        fill={true}
                         alt="Image of a short asian man standing beside bart simpson"
-                        height={400}
-                        width={300}
-                        priority
-                        className="w-[100%] border-[2px] border-solid border-ab rounded-[5px]"
+                        quality={100}
+                        style={{ objectFit: "cover" }}
+                        className="border-[2px] border-solid border-ab rounded-[50%]"
                     />
                 </motion.div>
             </div>
