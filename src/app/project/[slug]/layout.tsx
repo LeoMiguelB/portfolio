@@ -9,11 +9,10 @@ const inter = Inter({ subsets: ['latin'] })
 
 type Props = {
     params: { slug: string }
-    searchParams: { [key: string]: string | string[] | undefined }
 }
 
 export async function generateMetadata(
-    { params, searchParams }: Props,
+    { params }: Props,
     parent: ResolvingMetadata
 ): Promise<Metadata> {
     const slug = params.slug;
