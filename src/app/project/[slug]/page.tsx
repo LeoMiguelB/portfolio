@@ -7,34 +7,8 @@ import { Minus, Link as IconLink, Github, Home } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import useAxios from "../../../../hooks/useAxios";
-import { Metadata, ResolvingMetadata } from 'next'
 
 
-type Props = {
-    params: { slug: string }
-    searchParams: { [key: string]: string | string[] | undefined }
-}
-export async function generateMetadata(
-    { params, searchParams }: Props,
-    parent: ResolvingMetadata
-): Promise<Metadata> {
-    const slug = params.slug;
-
-    const { response: projectDetails }: any | null = await fetch(`/api/getProject?slug=${slug}`, {
-        method: 'GET',
-        headers: {
-            'accept': '*/*'
-        },
-    }).then((res) => res.json())
-
-
-    return {
-        title: projectDetails['title']
-            ? projectDetails.title + " | Projects"
-            : "Projects",
-        description: `page for my project ${projectDetails.title}`,
-    }
-}
 
 export default function SlugPage({ params }: { params: { slug: string } }) {
 

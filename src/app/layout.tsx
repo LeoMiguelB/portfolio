@@ -6,7 +6,10 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   generator: 'Next.js',
-  title: "Personal Portfolio",
+  title: {
+    default: "Personal Portfolio",
+    template: "%s"
+  },
   description: "Leo studies computer science at University of Guelph",
   viewport: {
     width: 'device-width',
