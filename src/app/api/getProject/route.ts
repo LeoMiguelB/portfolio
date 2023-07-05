@@ -17,15 +17,19 @@ const cache = new NodeCache({
     checkperiod: 300,
 });
 
-async function getDataFromCacheOrApi(cacheKey: string, apiCall: any) {
-    const cachedData: any = cache.get(cacheKey);
+
+
+async function getDataFromCacheOrApi<T>(cacheKey: string, apiCall: () => Promise<T>): Promise<T> {
+    const cachedData: CachedData<T> | undefined = cache.get(cacheKey);
 
     if (cachedData && cachedData.key === cacheKey) {
         return cachedData.data;
     }
 
     const freshData = await apiCall();
+
     cache.set(cacheKey, { key: cacheKey, data: freshData });
+
     return freshData;
 }
 
@@ -44,36 +48,30 @@ export async function GET(req: Request, res: Response) {
             });
             const data = response.data;
 
-            let result: Array<any> = [];
+            const result = data.filter((item: RepoData) => item.name === slug);
 
+            let projects: Array<LocalRepo> | string = await fs.promises.readFile(path.join(process.cwd(), "/data/projectData/index.json"), "utf-8");
 
-
-            result = data.filter((item: any) => item.name === slug);
-
-            let projects: any = await fs.promises.readFile(path.join(process.cwd(), "/data/projectData/index.json"), "utf-8");
             projects = JSON.parse(projects);
 
-            const projectData: Array<any> = []
+            const projectData: Array<LocalRepo> = []
 
-            projects.forEach((project: any) => {
-                if (result[0].name === project.repo_name) {
-                    project.overview = result[0].description;
-                    project.links.github = result[0].html_url;
-                    project.links.hosted =
-                        result[0].homepage !== ""
-                            ? result[0].homepage
-                            : false;
-                    projectData.push(project);
-                }
-            });
+            if (Array.isArray(projects)) {
+                projects.forEach((project: LocalRepo) => {
+                    if (result[0].name === project.repo_name) {
+                        project.overview = result[0].description;
+                        project.links.github = result[0].html_url;
+                        project.links.hosted =
+                            result[0].homepage !== ""
+                                ? result[0].homepage
+                                : false;
+                        projectData.push(project);
+                    }
+                });
+                return projectData[0];
+            }
 
-            return projectData[0];
         });
-
-        if (apiResult.status === 404) {
-            const { success, message } = apiResult;
-            return new Response(JSON.stringify({ success, message }), { status: apiResult.status });
-        }
 
         return new Response(JSON.stringify(apiResult), { status: 200 });
 

@@ -16,15 +16,16 @@ const cache = new NodeCache({
     checkperiod: 300,
 })
 
-async function getDataFromCacheOrApi(key: string, apiCall: any) {
-    const cachedData = cache.get(key);
+async function getDataFromCacheOrApi<T>(cacheKey: string, apiCall: () => Promise<T>): Promise<T> {
+    const cachedData: CachedData<T> | undefined = cache.get(cacheKey);
 
-    if (cachedData) {
-        return cachedData;
+    if (cachedData && cachedData.key === cacheKey) {
+        return cachedData.data;
     }
 
+
     const freshData = await apiCall();
-    cache.set(key, freshData);
+    cache.set(cacheKey, freshData);
     return freshData;
 }
 
